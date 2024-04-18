@@ -73,5 +73,14 @@ dependencies {
 
     implementation("io.coil-kt:coil-compose:2.6.0")
     implementation ("androidx.compose.material:material-icons-extended:1.6.5")
+    implementation("com.airbnb.android:lottie-compose:4.0.0")
+
+    implementation( "com.pierfrancescosoffritti.androidyoutubeplayer:chromecast-sender:0.28")
+
+
+    //Exo
+    implementation ("androidx.media3:media3-exoplayer:1.2.1")
+    implementation ("androidx.media3:media3-ui:1.2.1")
+    implementation ("androidx.media3:media3-common:1.2.1")
 
 }

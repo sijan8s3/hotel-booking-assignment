@@ -17,6 +17,7 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.*
 import com.sijan.hotelbooking.ui.auth.LoginScreen
 import com.sijan.hotelbooking.ui.auth.RegisterScreen
+import com.sijan.hotelbooking.ui.auth.SplashScreen
 import com.sijan.hotelbooking.ui.auth.UserDetailsScreen
 import com.sijan.hotelbooking.ui.bookings.BookingConfirmedScreen
 import com.sijan.hotelbooking.ui.bookings.BookingScreen
@@ -43,7 +44,8 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Navigation(navController: NavHostController) {
-    NavHost(navController = navController, startDestination = "login") {
+    NavHost(navController = navController, startDestination = "splash") {
+        composable("splash") { SplashScreen(navController = navController) }
         composable("login") { LoginScreen(navController = navController) }
         composable("register") { RegisterScreen(navController = navController) }
         composable("userDetails") { UserDetailsScreen(navController = navController) }
